@@ -1,7 +1,9 @@
 #include "message.h"
 
-Message::Message()
-{
+namespace messaging {
+
+BaseMessage::~BaseMessage()
+{ }
 
 }
 

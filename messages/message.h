@@ -4,8 +4,7 @@
 namespace messaging {
 
 struct BaseMessage {
-    virtual ~BaseMessage()
-    { }
+    virtual ~BaseMessage();
 };
 
 template <typename Msg>
