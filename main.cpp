@@ -1,10 +1,10 @@
 #include <iostream>
 
-using namespace std;
+int main(int argc, char** argv) try {
 
-int main()
-{
-    cout << "Hello World!" << endl;
+}
+catch (std::exception& e) {
+    std::cerr << e.what() << std::endl;
     return 0;
 }
 
