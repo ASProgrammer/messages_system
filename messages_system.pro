@@ -7,11 +7,13 @@ SOURCES += main.cpp \
     messages/message.cpp \
     strucutures/queue.cpp \
     subjects/sender.cpp \
-    subjects/receiver.cpp
+    subjects/receiver.cpp \
+    dispatcher.cpp
 
 HEADERS += \
     message.h \
     messages/message.h \
     strucutures/queue.h \
     subjects/sender.h \
-    subjects/receiver.h
+    subjects/receiver.h \
+    dispatcher.h

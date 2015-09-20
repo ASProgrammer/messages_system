@@ -9,7 +9,7 @@ class Sender;
 
 class Receiver {
 public:
-    explicit operator Sender();
+    operator Sender();
 
 private:
     Queue m_queue;
