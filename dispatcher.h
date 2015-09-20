@@ -1,9 +1,19 @@
 #ifndef DISPATCHER_H
 #define DISPATCHER_H
 
+#include <functional>
+
+#include "templatedispatcher.h"
+
+namespace std {
+template <typename T>
+class shared_ptr;
+}
+
 namespace messaging {
 
 class Queue;
+class BaseMessage;
 
 struct CloseQueueMsg { };
 

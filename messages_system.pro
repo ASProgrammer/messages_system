@@ -8,7 +8,8 @@ SOURCES += main.cpp \
     strucutures/queue.cpp \
     subjects/sender.cpp \
     subjects/receiver.cpp \
-    dispatcher.cpp
+    dispatcher.cpp \
+    templatedispatcher.cpp
 
 HEADERS += \
     message.h \
@@ -16,4 +17,5 @@ HEADERS += \
     strucutures/queue.h \
     subjects/sender.h \
     subjects/receiver.h \
-    dispatcher.h
+    dispatcher.h \
+    templatedispatcher.h
