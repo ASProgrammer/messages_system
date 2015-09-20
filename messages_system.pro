@@ -4,8 +4,10 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += main.cpp \
-    message.cpp
+    messages/message.cpp \
+    strucutures/queue.cpp
 
 HEADERS += \
-    message.h
-
+    message.h \
+    messages/message.h \
+    strucutures/queue.h
