@@ -1,16 +1,26 @@
 #include <iostream>
 
-#include "messages/message.h"
-#include "strucutures/queue.h"
 #include "subjects/receiver.h"
 #include "subjects/sender.h"
 
-struct Message { };
+#include "dispatcher.h"
+#include "templatedispatcher.h"
+
+struct Message {
+    std::string body;
+};
 
 int main(int argc, char** argv) try {
     messaging::Receiver receiver;
-    auto sender = messaging::Sender(receiver);
-    sender.send(Message { });
+
+    messaging::Sender sender = receiver;
+    sender.send(Message { "dialog" });
+
+    receiver.wait().handle<Message>([&](const Message& msg) {
+        std::cout << msg.body << std::endl;
+    });
+
+    return 0;
 }
 catch (std::exception& e) {
     std::cerr << e.what() << std::endl;

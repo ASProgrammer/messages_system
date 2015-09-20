@@ -6,10 +6,12 @@
 namespace messaging {
 
 class Sender;
+class Dispatcher;
 
 class Receiver {
 public:
     operator Sender();
+    Dispatcher wait();
 
 private:
     Queue m_queue;
