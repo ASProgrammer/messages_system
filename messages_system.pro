@@ -6,10 +6,12 @@ CONFIG -= qt
 SOURCES += main.cpp \
     messages/message.cpp \
     strucutures/queue.cpp \
-    subjects/sender.cpp
+    subjects/sender.cpp \
+    subjects/receiver.cpp
 
 HEADERS += \
     message.h \
     messages/message.h \
     strucutures/queue.h \
-    subjects/sender.h
+    subjects/sender.h \
+    subjects/receiver.h
